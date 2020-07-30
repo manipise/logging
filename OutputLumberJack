@@ -1,0 +1,6 @@
+$ ls -l
+total 552
+-rw-r--r-- 1 psm 1049089    700 Nov 16 13:30 logrotation.go
+-rw-r--r-- 1 psm 1049089 551152 Nov 16 23:12 user.log
+-rw-r--r-- 1 psm 1049089   3979 Nov 16 23:12 user-2017-11-16T17-42-16.959.log.gz
+-rw-r--r-- 1 psm 1049089   3925 Nov 16 23:12 user-2017-11-16T17-42-19.417.log.gz
