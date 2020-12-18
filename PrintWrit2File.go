@@ -48,8 +48,8 @@ func printPattern(data [][]string, format string) {
 	}
 
 	fmt.Fprintf(w, "%s", fmt.Sprintln("data Report"))
-	fmt.Fprintf(w, "%s", fmt.Sprintln("ExecutionId: ", data[0][0]))
-	fmt.Fprintf(w, "%s", fmt.Sprintln("SpecId: ", data[0][1]))
+	fmt.Fprintf(w, "%s", fmt.Sprintln("data1: ", data[0][0]))
+	fmt.Fprintf(w, "%s", fmt.Sprintln("Id: ", data[0][1]))
 	fmt.Fprintf(w, "%s", fmt.Sprintln("Operation: ", data[0][2]))
 	fmt.Fprintf(w, "%s", fmt.Sprintln("ExecutedBy: ", data[0][3]))
 	fmt.Fprintf(w, "%s", fmt.Sprintln("ExecStatus: ", data[0][4]))
@@ -57,7 +57,7 @@ func printPattern(data [][]string, format string) {
 	fmt.Fprintf(w, "%s", fmt.Sprintln("ExecutedEnd: ", data[0][6]))
 
 	table := tablewriter.NewWriter(w)
-	table.SetHeader([]string{"PoolName", "JobStatus", "Status", "Message"})
+	table.SetHeader([]string{"id", "Status", "Error details", "Message"})
 	table.SetBorder(false)
 	var trimval [][]string
 	for i := 0; i < len(data); i++ {
